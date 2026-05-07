@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap pt.2</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+	<style>
+		/*perlu tambahkan kelas elemen nav untuk styling elemen didalamnya
+		If a global stylesheet or a framework like Bootstrap uses a more specific selector use nav a then your simpler selector a will be overridden*/
+		.navbar-inverse .navbar-brand{
+			color: black;
+			margin-right: 0px;
+		}
+		.navbar-inverse .navbar-nav>li>a
+		{
+			color: #FFFFFF;
+		}
+		.navbar-inverse .navbar-nav>li.active>a{
+			background-color: #FF88FF;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse" style="background-color: #FF00FF;">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<img src="https://cdn.pixabay.com/photo/2015/04/19/08/32/flower-729510_1280.jpg" style="width : 30px;height: 30px; margin-top: 8px; margin-right: 4px;">
+				<a class="navbar-brand navbar-right" href="#">WebName</a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Items</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Help</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Login</a></li>
+					<li><a href="#">Report</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<center>
+			<h1>CAROUSEL</h1>
+			<div id="firstCarousel" class="carousel slide" data-ride="carousel">
+				<!--set carousel middle-bottom indicators-->
+				<ol class="carousel-indicators">
+					<li data-target="#firstCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#firstCarousel" data-slide-to="1"></li>
+					<li data-target="#firstCarousel" data-slide-to="2"></li>
+				</ol>
+				<!--set image items to be viewed-->
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="https://media.istockphoto.com/id/1884853187/id/foto/telur-paskah-dicelup-bergaya-dengan-bunga-musim-semi-dengan-latar-belakang-putih.webp?s=1024x1024&w=is&k=20&c=W6_h-tmZ0KoG-v9NNMQi9nwbI-WmzpCHVifEAJwvVG8=">
+					</div>
+					<div class="item">
+						<img src="https://media.istockphoto.com/id/891978822/id/foto/tulip-kuning-pada-hari-yang-cerah.webp?s=1024x1024&w=is&k=20&c=biC8uOSB0YdFkvzzKLsJK8bW45H0a2MQ6XAYAh-Tv2I=">
+					</div>
+					<div class="item">
+						<img src="https://media.istockphoto.com/id/1304527197/id/foto/bunga-daffodil-kuning-diterangi-oleh-sinar-matahari-di-taman-musim-semi-paskah-latar-belakang.webp?s=1024x1024&w=is&k=20&c=7wQwwHyjUBLvtOF-rLrCxFSHmCpU0FCmi7BPOu3S41s=">
+					</div>
+				</div>
+				<!--left right buttons-->
+				<a class="left carousel-control" href="#firstCarousel" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+					<span class="sr-only"></span></a>
+				<a class="right carousel-control" href="#firstCarousel" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+					<span class="sr-only"></span></a>
+			</div>
+		</center>
+	</div>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html> 
